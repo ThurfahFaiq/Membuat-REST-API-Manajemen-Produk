@@ -19,17 +19,6 @@ sql/schema.sql     skema tabel users & products (dijalankan manual di MySQL)
 
 ## Menjalankan
 
-1. Install dependency
-   ```bash
-   npm install
-   ```
-2. Buat database dan tabel di MySQL (phpMyAdmin, MySQL Workbench, atau terminal). Jalankan isi `sql/schema.sql`, atau buat sendiri dengan nama tabel/kolom yang sama persis:
-   ```bash
-   mysql -u root -p < sql/schema.sql
-   ```
-3. Salin `.env.example` menjadi `.env`, lalu isi `DB_*`, `JWT_SECRET`, dan kredensial Cloudinary. Nilai `DB_NAME` harus sama dengan nama database yang dibuat (default `product_db`).
-4. Jalankan server
-   ```bash
    npm run dev                  # mode development (watch)
    npm run build && npm start   # production
    ```
